@@ -1,0 +1,45 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-third {
+  flex-basis: calc(100% / 3);
+}
+
+.imagebackground {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1.8em;
+  margin: 1rem 5rem;
+}
+
+.row-sizing {
+  justify-content: space-around;
+  gap: 50px;
+  padding: 25px;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h3 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: #ddd;
+  text-align: center;
+}
+
+body {
+  background-color: #1997da;
+  font-family: Lato, sans-serif;
+}
