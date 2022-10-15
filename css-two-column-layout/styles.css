@@ -7,12 +7,8 @@
   display: flex;
 }
 
-.column-fourth {
+.column-half {
   flex-basis: calc(100% / 2);
-}
-
-.row2 {
-  display: flex;
 }
 
 .column-third {
@@ -23,26 +19,24 @@
   flex-basis: calc(200% / 3);
 }
 
-.rowformat {
-  justify-content: space-around;
+.wrap {
   flex-wrap: wrap;
 }
 
-.colthirdformat {
+.space-around {
+  justify-content: space-around;
+}
+
+.column-third-padding {
   padding: 5px 20px;
 }
 
-.col2thirdformat {
+.column-two-thirds-padding {
   padding-top: 20px;
 }
 
-.colfourthformat {
+.column-half-padding {
   padding: 30px;
-}
-
-.row2format {
-  flex-wrap: wrap;
-  padding: 10px;
 }
 
 body {
