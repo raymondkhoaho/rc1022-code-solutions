@@ -81,7 +81,6 @@ header a {
 }
 
 body {
-  margin: 50px;
   font-family: Avenir, sans-serif;
 }
 
@@ -93,7 +92,7 @@ body {
 
 header li {
   display: inline;
-  padding: 25px;
+  padding-left: 40px;
   font-size: 1rem;
 }
 
