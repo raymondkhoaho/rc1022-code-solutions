@@ -166,3 +166,25 @@ footer > a {
   background-color: #fafafa;
   height: 100px;
 }
+
+.footer-align {
+  margin: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.align-learn-more {
+  margin: 30px 100px;
+}
+
+.align-get-started {
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.address-align {
+  margin: 80px 100px;
+}
