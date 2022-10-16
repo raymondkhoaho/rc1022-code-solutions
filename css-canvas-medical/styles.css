@@ -146,15 +146,23 @@ h2 {
   height: 400px;
 }
 
-address {
+address,
+h3 {
   color: white;
 }
 
-h3 {
-  color: white;
+footer > a {
+  text-decoration: none;
+  color: #6e6e6e;
+  font-size: 1.2rem;
 }
 
 .links a {
   text-decoration: none;
   color: white;
+}
+
+.footerbackground {
+  background-color: #fafafa;
+  height: 100px;
 }
