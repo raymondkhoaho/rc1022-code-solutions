@@ -67,6 +67,8 @@
 header {
   margin-left: 100px;
   margin-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 h1 {
@@ -81,7 +83,7 @@ p {
 }
 
 .button-margin {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 header a {
@@ -90,6 +92,7 @@ header a {
 }
 
 .getstarted-button {
+  text-decoration: none;
   background-color: #294464;
   border: none;
   color: white;
@@ -130,10 +133,6 @@ header li {
 
 .text-center {
   text-align: center;
-}
-
-.justifycenter {
-  justify-content: center;
 }
 
 .greybackground {
@@ -199,13 +198,13 @@ footer {
   margin-left: 70px;
 }
 
-.align-learn-more {
+.learn-more-align {
   margin: 30px 100px;
 }
 
-.align-get-started {
-  margin-left: 200px;
-  margin-top: 50px;
+.get-started-align {
+  padding-left: 225px;
+  margin-top: 75px;
 }
 
 .address-align {
