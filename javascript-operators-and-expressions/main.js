@@ -47,7 +47,7 @@ console.log('typeof isSparta:', typeof isSparta);
 
 var motto = fullName;
 
-motto = motto + ' is the GOAT';
+motto += ' is the GOAT';
 
 console.log('value of motto:', motto);
 console.log('typeof motto:', typeof motto);
