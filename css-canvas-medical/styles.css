@@ -39,7 +39,7 @@
   margin-left: 10px;
 }
 
-.heroimagebackground {
+.hero-image-background {
   background-image: url("images/hero.jpg");
   background-size: cover;
   height: 550px;
@@ -47,7 +47,7 @@
   position: relative;
 }
 
-.imagetext {
+.image-text {
   color: white;
   text-align: left;
   margin: 50px 75px;
@@ -135,14 +135,14 @@ header li {
   text-align: center;
 }
 
-.greybackground {
+.grey-background {
   background-color: #fafafa;
   height: 500px;
   align-items: center;
   align-content: space-between;
 }
 
-.darkgreytext {
+.dark-grey-text {
   color: #6e6e6e;
 }
 
@@ -156,7 +156,7 @@ h2 {
   font-weight: 200;
 }
 
-.darkgreybackground {
+.dark-grey-background {
   background-color: #525351;
   height: 400px;
 }
@@ -184,7 +184,7 @@ footer > a {
   color: white;
 }
 
-.footerbackground {
+.footer-background {
   background-color: #fafafa;
   height: 100px;
 }
