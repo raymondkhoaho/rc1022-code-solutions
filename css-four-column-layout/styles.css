@@ -1,0 +1,43 @@
+body {
+  font-family: Barlow, sans-serif;
+}
+
+.container {
+  max-width: auto;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.container-background {
+  background-color: #f7f8fa;
+}
+
+.h2-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.phone-image {
+  width: 100%;
+}
+
+.icon-image {
+  width: 20%;
+  text-align: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
