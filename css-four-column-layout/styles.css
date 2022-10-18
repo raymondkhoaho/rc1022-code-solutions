@@ -1,15 +1,15 @@
 body {
   font-family: Barlow, sans-serif;
+  background-color: #f7f8fa;
 }
 
 .container {
-  max-width: auto;
+  max-width: 1200px;
   margin: auto;
 }
 
 .row {
   display: flex;
-  justify-content: center;
 }
 
 .column-full {
@@ -20,17 +20,8 @@ body {
   flex-basis: 25%;
 }
 
-.container-background {
-  background-color: #f7f8fa;
-}
-
-.h2-justify-center {
-  display: flex;
-  justify-content: center;
-}
-
 .phone-image {
-  width: 100%;
+  width: 90%;
 }
 
 .icon-image {
@@ -38,6 +29,12 @@ body {
   text-align: center;
 }
 
-.justify-around {
-  justify-content: space-around;
+h2 {
+  text-align: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
