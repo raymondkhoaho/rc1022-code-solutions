@@ -1,72 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Challenge - Canvas Medical</title>
+  <title>CSS Challenge - Canvas Medical - Products</title>
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <div class="container">
-    <header class="row justify-between underline">
-      <img class="logo" src="images/logo-blue.svg" alt="logo-blue">
-      <ul>
-        <li><a href="">Product</a></li>
-        <li><a href="">Implementation</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Blog</a></li>
-        <li class="button-padding"><a href="" class="contact-us-button">Contact Us</a></li>
-      </ul>
-    </header>
-    <div class="row product-header-image">
+    <div class="row underline">
+      <div class="column-full flex-between-margin">
+        <img class="logo" src="images/logo-blue.svg" alt="logo-blue">
+        <div class="nav-links">
+          <a href="">Product</a>
+          <a href="">Implementation</a>
+          <a href="">About Us</a>
+          <a href="">Blog</a>
+          <a href="" id="contact-us-button">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="row product-background">
       <div class="overlay"></div>
-      <div class="image-text">
+      <div class="column-full hero-text text-padding">
         <h1>It's the foundation for patient-centered primary care.</h1>
-        <p>Canvas creates a shared understanding of patient care across clinicians, staff, and
-          patients themselves - making you more productive, less stressed, and adding just a bit more joy
-          into your practice of medicine.
+        <p>Canvas creates a shared understanding of patient care across clinicians,
+          and patients themselves — making you more productive, less stressed,
+          and adding just a bit more joy into your practice of medicine.
         </p>
       </div>
     </div>
-    <div class="row underline grey-background">
-      <div class="col-full">
-        <div class="row">
-          <div class="col-full text-center dark-grey-text location-padding">
-            <h2>Clinicians Prefer Canvas</h2>
-            <p>Physician-owned primary care practices across the country have <br />
-              already made Canvas the fabric of their care.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-half text-center dark-grey-text location-padding">
-            <p>Cascade Family Practice, Portland OR</p>
-            <p>Temescal Creek Medicine, Oakland CA</p>
-            <p>San Juan Healthcare, Friday Harbor WA</p>
-          </div>
-          <div class="col-half text-center dark-grey-text location-padding">
-            <p>Ward Medical Clinic, Bonifay FL</p>
-            <p>Caribou Medical, Towanda PA</p>
-            <p>Bay Tree Family Care, Red Bay AL</p>
-          </div>
-        </div>
+    <!-- Product Page Main Content-->
+    <div class="row grey-background-product">
+      <div class="column-half">
+        <img class="image-padding" src="images/product/product-image-1.png" alt="product-image-1">
+      </div>
+      <div class="column-half product-text">
+        <h2>It puts care at your command</h2>
+        <p>You don't have to click a dozen times to order a flu shot or bounce
+          around five windows to discover the last blood count. Canvas pulls
+          everything you need directly into your note, so you never have to leave
+          it. And because canvas learns from every interaction, it gets smarter
+          with every patient you see.
+        </p>
+        <p><a href="">Learn more about charting.</a></p>
+        <p><em>&ldquo;Canvas works three times as fast, improves performance dramatically
+          on key quality metrics, and is incredibly easy to use. The right information
+          is presented in the right way at the right time, and the product leverages
+          technology to actually improve the quality of care I provide.&rdquo;</em>
+        </p>
+        <p>— Dr. Steve Magee, Family Physician</p>
       </div>
     </div>
-    <div class="row learn-more-background">
-      <div class="col-half dark-grey-text learn-more-align">
-        <h2>Ready to learn more?</h2>
-        <h4>Schedule a private meeting now</h4>
+    <div class="row">
+      <div class="column-half product-text">
+        <h2>It brings your population to life</h2>
+        <p>Canvas makes it simple to search and take action across your entire
+          patient panel, so you know who needs extra help and how best to give it to them.
+          Easily reach out to any subgroup of your population with proactive
+          interventions, and take comfort knowing you're a step ahead.
+        </p>
+        <p><a href="">Learn more about population management.</a></p>
+        <p><em>&ldquo;Which of my uncontrolled diabetic patients haven't had a test in the past 3 months
+          Which of my patients are on potentially unsafe levels of opioids according
+          to the most recent guidelines? That doesn't seem like a lot to ask and
+          those are tremendously important questions. But I just couldn't get an
+          answer from our old system! Canvas is light-years ahead.&rdquo;</em>
+        </p>
+        <p>— Dr. Ninad Athale, Family Physician</p>
       </div>
-      <div class="col-half get-started-align">
-        <a href="" class=" getstarted-button">Get Started</a>
+      <div class="column-half">
+        <img class="image-padding" src="images/product/product-image-2.png" alt="product-image-2">
+      </div>
+    </div>
+    <div class="row underline grey-background-product">
+      <div class="column-half">
+        <img class="image-padding" src="images/product/product-image-3.png" alt="product-image-3">
+      </div>
+      <div class="column-half product-text">
+        <h2>It automates performance improvement</h2>
+        <p>Clinical quality and revenue cycle reports can help you understand
+          performance, but they aren't enough to improve quality and increase
+          revenue day after day. Canvas automates quality protocols and charge
+          capture so clinicians can focus on more complex work only they can do.
+        </p>
+        <p><a href="">Learn more about practice management and billing.</a></p>
+        <p><em>&ldquo;With MIPS a reality and fee-for-service billing rules as complex
+          as ever, to be honest I didn't know how we were going to keep up. We're
+          a small practice and we don't have a big quality team or a group of
+          coders to catch everything. The automation in Canvas has completely
+          eliminated my concerns around quality and revenue performance.&rdquo;</em>
+        </p>
+        <p>— Dr. Sam Ward, Family Physician</p>
+      </div>
+    </div>
+    <!-- EndProduct Page Main Content-->
+    <div class="row">
+      <div class="column-full flex-between-margin">
+        <div class="dark-grey-text">
+          <h2>Ready to learn more?</h2>
+          <h4>Schedule a private meeting now</h4>
+        </div>
+        <div class="align-self">
+          <a href="" class="get-started-button">Get Started</a>
+        </div>
       </div>
     </div>
     <div class="row dark-grey-background">
-      <div class="col-half address-align">
+      <div class="column-third flex-column-even">
         <img class="logo logo-align" src="images/logo-white.png" alt="logo-white">
         <address>
           2307 Irving Street, Suite 228 <br />
@@ -75,28 +119,31 @@
           info@canvasmedical.com
         </address>
       </div>
-      <div class="col-one-eighth company-align">
-        <h3>COMPANY</h3>
+      <div class="column-two-thirds flex-even-padding">
         <div class="links">
-          <p><a href="">About Us</a></p>
-          <p><a href="">Blog</a></p>
+          <h3>COMPANY</h3>
+          <div>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Blog</a></p>
+          </div>
         </div>
-      </div>
-      <div class="col-three-eighths product-align">
-        <h3>PRODUCT</h3>
         <div class="links">
-          <p><a href="">Product</a></p>
-          <p><a href="">Implementation</a></p>
-          <p><a href="">For Health Plans</a></p>
-          <p><a href="">Security</a></p>
+          <h3>PRODUCT</h3>
+          <div>
+            <p><a href="">Product</a></p>
+            <p><a href="">Implementation</a></p>
+            <p><a href="">For Health Plans</a></p>
+            <p><a href="">Security</a></p>
+          </div>
         </div>
       </div>
     </div>
     <div class="row footer-background">
-      <footer>
-        <a class="footer-align" href="">Privacy &amp; Terms</a>
-        <a class="footer-align" href="">Contact Us</a>
+      <footer class="column-full align-self">
+        <a href="">Privacy &amp; Terms</a>
+        <a href="">Contact Us</a>
       </footer>
     </div>
+  </div>
 </body>
 </html>

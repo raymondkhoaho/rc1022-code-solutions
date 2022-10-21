@@ -7,91 +7,95 @@
   display: flex;
 }
 
-.col-full {
+.column-full {
   flex-basis: 100%;
 }
 
-.col-half {
+.column-half {
   flex-basis: 50%;
 }
 
-.col-one-fourth {
-  flex-basis: 25%;
+.column-third {
+  flex-basis: calc(100% / 3);
 }
 
-.col-one-eighth {
-  flex-basis: calc(100% / 8);
+.column-two-thirds {
+  flex-basis: calc(200% / 3);
 }
 
-.col-three-eighths {
-  flex-basis: calc(300% / 8);
-}
-
-.justify-between {
+.flex-between-margin {
+  display: flex;
   justify-content: space-between;
+  margin: 0 75px 20px;
 }
 
 .logo {
   width: 155px;
 }
 
-.logo-align {
-  margin-left: 10px;
+.underline {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #e7e9ec;
 }
 
-.hero-image-background {
+body {
+  margin: 50px 0;
+  font-family: Avenir, sans-serif;
+}
+
+#contact-us-button {
+  background-color: #294464;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.hero-background {
   background-image: url("images/hero.jpg");
   background-size: cover;
-  height: 550px;
-  margin: 50px 100px;
   position: relative;
-}
-
-.image-text {
-  color: white;
-  text-align: left;
-  margin: 50px 75px;
-  position: absolute;
-  width: 50%;
+  height: 550px;
+  margin: 75px;
 }
 
 .overlay {
   background: rgb(100 98 98 / 45%);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-header {
-  margin-left: 100px;
-  margin-right: 100px;
-  padding-top: 20px;
-  padding-bottom: 15px;
+.hero-text {
+  color: white;
+  position: absolute;
+  width: 49%;
+  line-height: 1.75rem;
+  margin: 75px;
+  bottom: 20px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-family: "Tiempos Headline", sans-serif;
-  font-weight: 200;
-  margin-bottom: 10px;
+  font-weight: 100;
+  line-height: 3rem;
 }
 
-p {
-  line-height: 1.75;
+h2 {
+  font-size: 2rem;
+  font-family: "Tiempos Headline", sans-serif;
+  margin-bottom: 0;
+  font-weight: 100;
 }
 
-.button-margin {
-  margin-top: 40px;
+.line-height {
+  line-height: 1.75rem;
 }
 
-header a {
-  color: #a0a0a0;
-  text-decoration: none;
-}
-
-.getstarted-button {
+.get-started-button {
   text-decoration: none;
   background-color: #294464;
   border: none;
@@ -102,86 +106,59 @@ header a {
   font-family: Avenir, sans-serif;
 }
 
-.contact-us-button {
-  background-color: #294464;
-  border: none;
-  color: white;
-  padding: 12px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-}
-
-body {
-  font-family: Avenir, sans-serif;
-}
-
-.underline {
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: #e7e9ec;
-}
-
-header li {
-  display: inline;
-  padding-left: 40px;
-  font-size: 1rem;
-}
-
-.button-padding {
-  padding-left: 20px;
-}
-
-.text-center {
-  text-align: center;
+.button-margin {
+  margin-top: 45px;
 }
 
 .grey-background {
   background-color: #fafafa;
   height: 500px;
+  width: auto;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  align-content: space-between;
+  text-align: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
 }
 
 .dark-grey-text {
   color: #6e6e6e;
 }
 
-.location-padding {
-  padding: 30px;
+.flex-column-even {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-h2 {
-  font-size: 2rem;
-  font-family: "Tiempos Headline", sans-serif;
-  font-weight: 200;
+.align-self {
+  align-self: center;
 }
 
 .dark-grey-background {
   background-color: #525351;
   height: 400px;
-}
-
-address,
-h3 {
-  color: white;
+  padding: 75px;
 }
 
 address {
-  margin-top: 30px;
-  margin-left: 10px;
-  line-height: 1.6rem;
+  line-height: 1.75rem;
+  color: white;
   font-style: normal;
 }
 
-footer > a {
-  text-decoration: none;
-  color: #6e6e6e;
-  font-size: 1.2rem;
-}
-
-.links a {
-  text-decoration: none;
-  color: white;
+.flex-even-padding {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px 0 0 40px;
 }
 
 .footer-background {
@@ -189,45 +166,65 @@ footer > a {
   height: 100px;
 }
 
-.footer-align {
-  margin: 20px;
+footer > a {
+  text-decoration: none;
+  color: #6e6e6e;
+  font-size: 1.2rem;
+  padding-right: 40px;
 }
 
 footer {
-  margin-top: 40px;
-  margin-left: 70px;
+  margin-left: 75px;
 }
 
-.learn-more-align {
-  margin: 30px 100px;
+.nav-links a {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #a0a0a0;
 }
 
-.get-started-align {
-  padding-left: 225px;
-  margin-top: 75px;
+.links,
+.links a {
+  text-decoration: none;
+  color: white;
 }
 
-.address-align {
-  padding: 90px;
-}
+/* Product page specific CSS styles */
 
-.company-align {
-  margin-top: 80px;
-  padding-left: 20px;
-  line-height: 1rem;
-}
-
-.product-align {
-  margin-top: 80px;
-  padding-left: 100px;
-  line-height: 1rem;
-}
-
-.product-header-image {
+.product-background {
   background-image: url("images/product/product-header.jpg");
   background-size: cover;
-  height: 500px;
-  margin: 100px;
-  margin-bottom: 50px;
+  background-position: center;
   position: relative;
+  height: 500px;
+  margin: 125px 75px 75px;
+}
+
+.text-padding {
+  padding-bottom: 40px;
+}
+
+.grey-background-product {
+  background-color: #fbfbfb;
+}
+
+.product-text {
+  color: #505150;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+  padding: 75px;
+}
+
+.product-text p {
+  color: #9a9a9a;
+}
+
+.product-text a {
+  text-decoration: none;
+  color: #475f78;
+}
+
+.image-padding {
+  padding: 75px;
+  width: 110%;
 }
