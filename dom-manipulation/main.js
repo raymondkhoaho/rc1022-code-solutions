@@ -35,5 +35,3 @@ function updateClickCount(event) {
 }
 
 $hotButton.addEventListener('click', updateClickCount);
-
-$clickCount.textContent = 'Clicks: ' + clickCounter;
