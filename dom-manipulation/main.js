@@ -6,6 +6,9 @@ create addeventlistener for button for a click event.
 create variable to store number of times button has been clicked.
 create new variable for DOM query for hot-button class.
 create new variable for DOM query for click-count class
+increment click count in function by using i++.
+create conditionals for number of clicks and change class name of the hot button
+based on number of clicks.
 */
 
 var clickCounter = 0;
