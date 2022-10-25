@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+  margin: 200px;
+}
+
+.light-bulb {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.light-bulb.yellow {
+  background-color: #faea84;
+  box-shadow: 0 0 15px 4px #faea84;
+}
+
+.light-bulb.black {
+  background-color: #222223;
+  box-shadow: 0 0 15px 4px #222223;
+}
+
+.background-yellow {
+  background-color: #fef9f1;
+}
+
+.background-black {
+  background-color: #111;
+}
+
+div:active {
+  transform: translate(0.1rem, 0.1rem);
+}
