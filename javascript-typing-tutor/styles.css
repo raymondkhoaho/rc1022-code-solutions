@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-auto {
+  flex-basis: auto;
+}
+
+div {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+}
+
+span {
+  padding: 2px;
+}
+
+.current {
+  border-bottom: 3px solid black;
+}
+
+.correct {
+  color: #16cd1a;
+}
+
+.incorrect {
+  color: #f80f08;
+  border-bottom: 3px solid #f80f08;
+}
