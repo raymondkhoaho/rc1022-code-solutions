@@ -13,7 +13,7 @@ return new array.
 */
 function take(array, count) {
   var output = [];
-  if (count <= array.length) {
+  if (count < array.length) {
     for (var i = 0; i < count; i++) {
       output.push(array[i]);
     }
