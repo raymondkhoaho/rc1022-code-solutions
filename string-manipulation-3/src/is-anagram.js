@@ -12,13 +12,13 @@ function isAnagram(firstString, secondString) {
   // debugger;
   var newFirstString = firstString.replaceAll(' ', '');
   var newSecondString = secondString.replaceAll(' ', '');
-  if (newFirstString.length === newSecondString.length) {
-    for (var i = 0; i < newSecondString.length; i++) {
-      // if (newSecondString[i] !== newFirstString[i]) {
-      if (newFirstString.includes(newSecondString[i]) === false) {
-        return false;
-      }
-    }
+  var splitFirst = newFirstString.split('');
+  var sortFirst = splitFirst.sort();
+  var joinFirst = sortFirst.join();
+  var splitSecond = newSecondString.split('');
+  var sortSecond = splitSecond.sort();
+  var joinSecond = sortSecond.join();
+  if (joinFirst === joinSecond) {
     return true;
   } else {
     return false;
