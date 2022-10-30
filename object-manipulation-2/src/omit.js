@@ -17,7 +17,7 @@ function omit(source, keys) {
   return output;
 }
 
-// working function but shouldn't use
+// working function but do not use ----
 // function omit(source, keys) {
 //   var output = {};
 //   var excludeKeys = new Set(keys);
