@@ -286,3 +286,71 @@ footer {
   line-height: 1.6rem;
   margin: 25px 0;
 }
+
+/* About Us Page specific CSS */
+
+.about-us-background {
+  background-image: url("images/about-us/about-us-header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 500px;
+  margin: 125px 75px 75px;
+}
+
+.about-text {
+  color: white;
+  position: absolute;
+  width: 50%;
+  line-height: 1.75rem;
+  margin: 75px;
+  bottom: 70px;
+}
+
+.about-main-text {
+  color: #6c6a6a;
+  line-height: 1.6rem;
+}
+
+.about-main-text > h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-main-text a {
+  text-decoration: none;
+  color: #0a4265;
+}
+
+/* About Us page specific CSS */
+
+.about-background {
+  background-color: #fafafa;
+}
+
+.testing2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-heading {
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-members img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.member {
+  flex-basis: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
