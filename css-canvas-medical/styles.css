@@ -310,6 +310,7 @@ footer {
 .about-main-text {
   color: #6c6a6a;
   line-height: 1.6rem;
+  margin-bottom: 75px;
 }
 
 .about-main-text > h2 {
@@ -320,24 +321,18 @@ footer {
 .about-main-text a {
   text-decoration: none;
   color: #0a4265;
+  font-weight: 800;
 }
-
-/* About Us page specific CSS */
 
 .about-background {
   background-color: #fafafa;
-  padding: 75px;
+  padding: 50px 75px;
   color: #6c6a6a;
-}
-
-.testing2 {
-  display: flex;
-  flex-direction: column;
 }
 
 .about-heading {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team-members {
@@ -347,7 +342,7 @@ footer {
 }
 
 .team-members img {
-  width: 190px;
+  width: 200px;
   border-radius: 50%;
 }
 
@@ -362,5 +357,28 @@ footer {
 }
 
 .member > h2 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+
+.advisory-heading {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+.advisory {
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.story-text {
+  color: #6c6a6a;
+  line-height: 1.5rem;
+  margin-bottom: 75px;
+}
+
+.story-header {
+  text-align: center;
+  margin: 75px 0 30px;
 }
