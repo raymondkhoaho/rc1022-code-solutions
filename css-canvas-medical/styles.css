@@ -248,31 +248,37 @@ footer {
   justify-content: center;
 }
 
-.testing {
+.imp-main-flex-center-padding {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 110px;
-  color: #50514f;
+  padding: 20px 110px 200px;
+  color: #6c6a6a;
 }
 
-ol {
+.implementation-list {
+  padding: 0 175px;
+  margin-top: 60px;
+}
+
+.implementation-list > li {
   font-size: 2rem;
   font-family: "Tiempos Headline", sans-serif;
+  padding: 15px;
+  list-style-position: inside;
 }
 
-h3 {
+.implementation-list h3 {
   line-height: 1.5rem;
   font-size: 1.25rem;
   font-family: Avenir, sans-serif;
+  display: inline;
+  padding: 5px;
 }
 
 .imp-text {
   font-size: 1rem;
   font-family: Avenir, sans-serif;
   line-height: 1.5rem;
-}
-
-.testing2 {
-  padding: 0 75px;
+  margin: 25px 0;
 }
