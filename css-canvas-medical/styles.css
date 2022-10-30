@@ -189,6 +189,10 @@ footer {
   color: white;
 }
 
+#active-page-color {
+  color: #3e6a86;
+}
+
 /* Product page specific CSS styles */
 
 .product-background {
@@ -279,6 +283,6 @@ footer {
 .imp-text {
   font-size: 1rem;
   font-family: Avenir, sans-serif;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   margin: 25px 0;
 }
