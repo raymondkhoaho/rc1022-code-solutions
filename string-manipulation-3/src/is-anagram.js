@@ -1,16 +1,16 @@
 /* exported isAnagram */
 /*
 remove spaces from both strings and assign to new string.
-if statement length of new first string has to strictly equal length of second new string.
-if true, create for loop to iterate through string two and compare string at index to string.
-if false at any point, return false.
-if no false, return true.
----- one test failed 0 need to account for repeating letters.
-added .toLowerCase() to account for uppercase/lowercased letters.
+split each string to assign to new array
+sort array in alphabetical order
+join sorted array and assign to new variable.
+compare new first string strictly to new second string.
+if strictly equal, return true.
+else return false.
+--- added .toLowerCase() to account for uppercase/lowercased letters.
 */
 
 function isAnagram(firstString, secondString) {
-  // debugger;
   var newFirstString = firstString.replaceAll(' ', '').toLowerCase();
   var newSecondString = secondString.replaceAll(' ', '').toLowerCase();
   var splitFirst = newFirstString.split('');
