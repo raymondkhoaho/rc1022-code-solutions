@@ -6,12 +6,13 @@ if true, create for loop to iterate through string two and compare string at ind
 if false at any point, return false.
 if no false, return true.
 ---- one test failed 0 need to account for repeating letters.
+added .toLowerCase() to account for uppercase/lowercased letters.
 */
 
 function isAnagram(firstString, secondString) {
   // debugger;
-  var newFirstString = firstString.replaceAll(' ', '');
-  var newSecondString = secondString.replaceAll(' ', '');
+  var newFirstString = firstString.replaceAll(' ', '').toLowerCase();
+  var newSecondString = secondString.replaceAll(' ', '').toLowerCase();
   var splitFirst = newFirstString.split('');
   var sortFirst = splitFirst.sort();
   var joinFirst = sortFirst.join();
