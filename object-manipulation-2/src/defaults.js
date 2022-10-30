@@ -7,7 +7,6 @@ assign these key/value pair of source to target object.
 */
 
 function defaults(target, source) {
-// debugger;
   for (var keys in source) {
     if (keys in target === false) {
       target[keys] = source[keys];
