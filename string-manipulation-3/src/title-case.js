@@ -9,7 +9,9 @@ function titleCase(title) {
   var newTitle = '';
   var splitTitle = title.split(' ');
   for (var i = 0; i < splitTitle.length; i++) {
-    if (splitTitle[i].toLowerCase === 'api') {
+    if (splitTitle[i].toLowerCase() === 'in' || splitTitle[i].toLowerCase() === 'for' || splitTitle[i].toLowerCase() === 'the' || splitTitle[i].toLowerCase() === 'of' || splitTitle[i].toLowerCase() === 'and') {
+      newTitle += splitTitle[i].toLowerCase() + ' ';
+    } else if (splitTitle[i].toLowerCase === 'api') {
       newTitle += 'API' + ' ';
     } else if (splitTitle[i].toLowerCase() === 'javascript') {
       newTitle += 'JavaScript' + ' ';
