@@ -189,6 +189,10 @@ footer {
   color: white;
 }
 
+#active-page-color {
+  color: #3e6a86;
+}
+
 /* Product page specific CSS styles */
 
 .product-background {
@@ -231,4 +235,150 @@ footer {
 .image-padding {
   padding: 75px;
   width: 110%;
+}
+
+/* Implementation page specific CSS styles */
+
+.implementation-background {
+  background-image: url("images/implementation/implementation-header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 500px;
+  margin: 125px 75px 75px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.imp-main-flex-center-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 110px 200px;
+  color: #6c6a6a;
+}
+
+.implementation-list {
+  padding: 0 175px;
+  margin-top: 60px;
+}
+
+.implementation-list > li {
+  font-size: 2rem;
+  font-family: "Tiempos Headline", sans-serif;
+  padding: 15px;
+  list-style-position: inside;
+}
+
+.implementation-list h3 {
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+  font-family: Avenir, sans-serif;
+  display: inline;
+  padding: 5px;
+}
+
+.imp-text {
+  font-size: 1rem;
+  font-family: Avenir, sans-serif;
+  line-height: 1.6rem;
+  margin: 25px 0;
+}
+
+/* About Us Page specific CSS */
+
+.about-us-background {
+  background-image: url("images/about-us/about-us-header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 500px;
+  margin: 125px 75px 75px;
+}
+
+.about-text {
+  color: white;
+  position: absolute;
+  width: 50%;
+  line-height: 1.75rem;
+  margin: 75px;
+  bottom: 70px;
+}
+
+.about-main-text {
+  color: #6c6a6a;
+  line-height: 1.6rem;
+  margin-bottom: 75px;
+}
+
+.about-main-text > h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-main-text a {
+  text-decoration: none;
+  color: #0a4265;
+  font-weight: 800;
+}
+
+.about-background {
+  background-color: #fafafa;
+  padding: 50px 75px;
+  color: #6c6a6a;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-members img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.member {
+  flex-basis: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.member > h2 {
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+
+.advisory-heading {
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+.advisory {
+  line-height: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.story-text {
+  color: #6c6a6a;
+  line-height: 1.5rem;
+  margin-bottom: 75px;
+}
+
+.story-header {
+  text-align: center;
+  margin: 75px 0 30px;
 }
