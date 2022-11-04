@@ -19,8 +19,8 @@ function zip(first, second) {
     }
   } else {
     for (var j = 0; j < second.length; j++) {
-      var pairedArray2 = [first[j], second[j]];
-      newArray.push(pairedArray2);
+      pairedArray = [first[j], second[j]];
+      newArray.push(pairedArray);
     }
   }
   return newArray;
