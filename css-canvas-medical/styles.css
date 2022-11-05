@@ -23,6 +23,10 @@
   flex-basis: calc(200% / 3);
 }
 
+.column-fourth {
+  flex-basis: 25%;
+}
+
 .flex-between-margin {
   display: flex;
   justify-content: space-between;
@@ -381,4 +385,64 @@ footer {
 .story-header {
   text-align: center;
   margin: 75px 0 30px;
+}
+
+/* blog specific css */
+
+#email {
+  width: 90%;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid #d8d3d7;
+  margin: 20px 0;
+  padding: 20px 0;
+  font-size: 1rem;
+  color: #d8d3d7;
+}
+
+.blog-form-style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #505a68;
+}
+
+#subscribe-button {
+  text-decoration: none;
+  background-color: #294464;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.blog-margin {
+  margin: 100px 0;
+}
+
+.testing {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testing2 img {
+  width: 100%;
+}
+
+.testing2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 75px;
+}
+
+.article {
+  width: 50%;
+  padding: 20px;
+}
+
+.article a {
+  text-decoration: none;
+  color: #0a426b;
 }
