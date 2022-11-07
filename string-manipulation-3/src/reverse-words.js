@@ -11,9 +11,15 @@ return reversed string and trim off white space to account for extra spaces.
 
 function reverseWords(string) {
   var reverseString = '';
+  var reverseWord = '';
   var stringArray = string.split(' ');
   for (var i = 0; i < stringArray.length; i++) {
-    reverseString += stringArray[i].split('').reverse().join('') + ' ';
+    var splitWord = stringArray[i].split('');
+    var lastIndex = stringArray[i].length - 1;
+    for (var j = lastIndex; j >= 0; j--) {
+      reverseWord += splitWord[j];
+    }
   }
-  return reverseString.trim();
+  reverseString += reverseWord + ' ';
+  return reverseString;
 }
