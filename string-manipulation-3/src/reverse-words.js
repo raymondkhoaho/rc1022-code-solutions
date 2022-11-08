@@ -14,10 +14,9 @@ function reverseWords(string) {
   var stringArray = string.split(' ');
   for (var i = 0; i < stringArray.length; i++) {
     var reverseWord = '';
-    var splitWord = stringArray[i].split('');
     var lastIndex = stringArray[i].length - 1;
     for (var j = lastIndex; j >= 0; j--) {
-      reverseWord += splitWord[j];
+      reverseWord += stringArray[i][j];
     }
     reverseString += reverseWord + ' ';
   }
