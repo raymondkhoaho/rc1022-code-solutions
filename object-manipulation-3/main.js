@@ -54,6 +54,13 @@ for (var k = 0; k < players.length; k++) {
   players[k].hand = dealTwoCards;
 }
 
+// if (rank === 'Ace') {
+//   rank = 11;
+// } else if (rank === 'Queen' || rank === 'King' || rank === 'Jack') {
+//   rank = 10;
+// } else {
+//   rank = parseInt(rank);
+// }
 // for (var l = 0; l < players.length; l++) {
 
 // }
