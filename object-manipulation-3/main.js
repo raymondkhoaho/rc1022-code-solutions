@@ -9,10 +9,10 @@ create a deck of 52 cards, containing 13 ranks and 4 suits.
   create a for loop to go through the 13 ranks
     for each rank, create for loop to go through 4 suits.
     push each rank and suit as a property in an object to empty array for deck.
-    return deck.
-shuffle deck using lodash shuffle method. assign to new variable?
-deal card using pop method. assign to new variable?
-
+shuffle deck using lodash shuffle method. assign to new variable.
+deal two cards with splice method and splice last two index of shuffled deck. assign to new variable.
+create for loop to iterate through the 4 players and assign each hand with two cards via previous variable.
+once hand is assigned, loop through players again and get add values of both hands.
 */
 
 var players = [
@@ -53,3 +53,7 @@ for (var k = 0; k < players.length; k++) {
   var dealTwoCards = shuffledDeck.splice(shuffledDeck.length - 2, 2);
   players[k].hand = dealTwoCards;
 }
+
+// for (var l = 0; l < players.length; l++) {
+
+// }
