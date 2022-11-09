@@ -6,6 +6,6 @@ function countdown() {
     clearInterval(intervalID);
     $countdownText.textContent = '~Earth Beeeeellllooowwwww Us~';
   } else {
-    $countdownText.textContent -= intervalID;
+    $countdownText.textContent -= 1;
   }
 }
