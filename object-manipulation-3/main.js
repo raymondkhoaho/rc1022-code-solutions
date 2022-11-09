@@ -20,19 +20,19 @@ console log players name at index.
 
 var players = [
   {
-    name: 'player1',
+    name: 'Gertrude Targaryen',
     hand: ''
   },
   {
-    name: 'player2',
+    name: 'Egon Lannister',
     hand: ''
   },
   {
-    name: 'player3',
+    name: 'Bertram Stark',
     hand: ''
   },
   {
-    name: 'player4',
+    name: 'Deacon Baratheon',
     hand: ''
   }
 ];
@@ -74,12 +74,16 @@ function getHandValue() {
   }
   return handsArray;
 }
+getHandValue();
 
 var highestScore = _.max(getHandValue());
 
 function winner() {
   for (var n = 0; n < getHandValue().length; n++) {
     if (getHandValue()[n] === highestScore) {
+      console.log('Players are:', players);
+      console.log('Scores of players are:', getHandValue());
+      console.log('Winning Score is:', highestScore);
       console.log('Winning Player is:', players[n].name);
     }
   }
