@@ -3,7 +3,7 @@ var intervalID = setInterval(countdown, 1000);
 var count = 4;
 
 function countdown() {
-  if (count === 0) {
+  if (count < 0) {
     clearInterval(intervalID);
     $countdownText.textContent = '~Earth Beeeeellllooowwwww Us~';
   } else {
