@@ -1,0 +1,53 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: 2px solid black;
+}
+
+.row {
+  display: flex;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.image-wrapper {
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+  gap: 10px;
+  margin: 25px;
+}
+
+.chevron-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.chevron-wrapper a {
+  font-size: 3rem;
+  color: black;
+}
+
+.progress-indicator a {
+  color: black;
+}
+
+.image1 {
+  background-image: url("images/001.png");
+}
