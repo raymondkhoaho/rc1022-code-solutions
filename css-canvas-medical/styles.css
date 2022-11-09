@@ -396,8 +396,9 @@ footer {
   border-bottom: 1px solid #d8d3d7;
   margin: 20px 0;
   padding: 20px 0;
-  font-size: 1rem;
-  color: #d8d3d7;
+  font-size: 1.5rem;
+  word-spacing: 0.2rem;
+  color: #dad9d9;
 }
 
 .blog-form-style {
@@ -412,13 +413,14 @@ footer {
   background-color: #294464;
   border: none;
   color: white;
-  padding: 10px 25px;
+  padding: 15px 40px;
   font-size: 1rem;
   border-radius: 5px;
+  margin-top: 30px;
 }
 
 .blog-margin {
-  margin: 100px 0;
+  margin: 100px 0 50px;
 }
 
 .testing {
@@ -436,7 +438,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 150px;
+  margin: 0 150px 50px;
 }
 
 .article {
@@ -449,4 +451,8 @@ footer {
   color: #0a426b;
   font-size: 1.75rem;
   line-height: 1px;
+}
+
+.article h2 {
+  line-height: 2rem;
 }
