@@ -393,28 +393,32 @@ footer {
   width: 90%;
   border: none;
   text-align: center;
-  border-bottom: 1px solid #d8d3d7;
+  border-bottom: 1px solid #979797;
   margin: 20px 0;
   padding: 20px 0;
-  font-size: 1.5rem;
-  word-spacing: 0.2rem;
+}
+
+#email::placeholder {
   color: #dad9d9;
+  letter-spacing: 0.05rem;
+  font-size: 1.6rem;
+  font-family: Avenir, sans-serif;
 }
 
 .blog-form-style {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #505a68;
+  color: #505150;
 }
 
 #subscribe-button {
   text-decoration: none;
-  background-color: #294464;
+  background-color: #0a4265;
   border: none;
   color: white;
-  padding: 15px 40px;
-  font-size: 1rem;
+  padding: 15px 45px;
+  font-size: 1.1rem;
   border-radius: 5px;
   margin-top: 30px;
 }
@@ -423,18 +427,13 @@ footer {
   margin: 100px 0 50px;
 }
 
-.testing {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.testing2 img {
+.article-margin img {
   width: 100%;
   height: 275px;
   object-fit: cover;
 }
 
-.testing2 {
+.article-margin {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -450,9 +449,12 @@ footer {
   text-decoration: none;
   color: #0a426b;
   font-size: 1.75rem;
-  line-height: 1px;
 }
 
 .article h2 {
   line-height: 2rem;
+}
+
+.article p {
+  color: #9a9999;
 }
