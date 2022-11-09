@@ -458,3 +458,61 @@ footer {
 .article p {
   color: #9a9999;
 }
+
+/* contact-us page specific css */
+
+.contact-margin {
+  margin: 100px 75px;
+}
+
+.contact-us-form input,
+textarea {
+  width: 100%;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid #979797;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.contact-us-form input::placeholder,
+textarea::placeholder {
+  color: #dad9d9;
+  letter-spacing: 0.05rem;
+  font-size: 1.4rem;
+  font-family: Avenir, sans-serif;
+}
+
+.contact-text {
+  padding-right: 150px;
+  color: #50514f;
+}
+
+.contact-text h2 {
+  margin: 20px 0;
+}
+
+.contact-text a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #0a4265;
+}
+
+.contact-text p {
+  line-height: 1.75rem;
+  font-size: 1.15rem;
+  text-align: left;
+  word-spacing: 0.05rem;
+  margin-top: 20px;
+}
+
+#submit-button {
+  text-decoration: none;
+  background-color: #0a4265;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-top: 25px;
+}
