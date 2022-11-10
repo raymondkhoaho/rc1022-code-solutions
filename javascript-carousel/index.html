@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row align-center">
+      <div class="column-fourth">
+        <div class="chevron-wrapper">
+          <a class="backward-button" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+        </div>
+      </div>
+      <div class="column-half">
+        <div class="row">
+          <div class="image-wrapper">
+            <img class="main-image" src="images/001.png">
+          </div>
+        </div>
+        <div class="row justify-center progress-indicator">
+          <div class="column-fifth">
+            <a href="#"><i data-image-index="0" class="fa-solid fa-circle"></i></a>
+          </div>
+          <div class="column-fifth">
+            <a href="#"><i data-image-index="1" class="fa-regular fa-circle"></i></a>
+          </div>
+          <div class="column-fifth">
+            <a href="#"><i data-image-index="2" class="fa-regular fa-circle"></i></a>
+          </div>
+          <div class="column-fifth">
+            <a href="#"><i data-image-index="3" class="fa-regular fa-circle"></i></a>
+          </div>
+          <div class="column-fifth">
+            <a href="#"><i data-image-index="4" class="fa-regular fa-circle"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="column-fourth align-center">
+        <div class="chevron-wrapper">
+          <a class="forward-button" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
