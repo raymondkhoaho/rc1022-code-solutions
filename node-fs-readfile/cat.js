@@ -6,9 +6,9 @@ function readRecursive(i) {
     fs.readFile(process.argv[i], 'utf8', (err, data) => {
       if (err) throw err;
       console.log(data);
+      readRecursive(i);
     });
     i++;
-    readRecursive(i);
   }
 }
 readRecursive(i);
