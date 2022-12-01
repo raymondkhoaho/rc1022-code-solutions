@@ -29,7 +29,6 @@ if (process.argv[2] === 'update') {
   const index = process.argv[3];
   const newText = process.argv[4];
   dataJson.notes[index] = newText;
-  console.log(dataJson);
   const data = JSON.stringify(dataJson, null, 2);
   fs.writeFile('data.json', data, err => {
     if (err) throw err;
