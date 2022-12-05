@@ -16,3 +16,14 @@ app.get('/api/notes', (req, res) => {
   }
   res.json(notesArray);
 });
+
+app.get('/api/notes/:id', (req, res) => {
+  const id = Number(req.params.id);
+  if (!Number.isInteger(id)) {
+    res.status(400).send({ error: 'id must be a positive integer' });
+  } else if (dataJson.notes[id]) {
+    res.status(200).send(dataJson.notes[id]);
+  } else {
+    res.status(404).send({ error: 'cannot find note with id 13' });
+  }
+});
