@@ -1,5 +1,5 @@
 {
-  "nextId": 15,
+  "nextId": 16,
   "notes": {
     "2": {
       "id": 2,
@@ -17,17 +17,9 @@
       "id": 9,
       "content": "Inertia is a property of matter."
     },
-    "10": {
-      "content": "hi",
-      "id": 10
-    },
-    "11": {
-      "content": "test",
-      "id": 11
-    },
-    "12": {
-      "content": "test",
-      "id": 12
+    "15": {
+      "content": "Life is like a box of chocolate.",
+      "id": 15
     }
   }
 }
