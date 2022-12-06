@@ -57,7 +57,7 @@ app.delete('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
   if (!Number.isInteger(id)) {
     res.status(400).json({ error: 'id must be a positive integer' });
-  } else if (Number.isInteger(id) && !(id in dataJson.notes)) {
+  } else if (!(id in dataJson.notes)) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
   } else if (id in dataJson.notes) {
     delete dataJson.notes[id];
@@ -78,9 +78,23 @@ app.delete('/api/notes/:id', (req, res) => {
 app.put('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
   const updateEntry = req.body;
+  updateEntry.id = id;
   if (!Number.isInteger(id)) {
     res.status(400).json({ error: 'id must be a positive integer' });
   } else if (!('content' in updateEntry)) {
     res.status(400).json({ error: 'content is a required field' });
+  } else if (!(id in dataJson.notes)) {
+    res.status(404).json({ error: `cannot find note with id ${id}` });
+  } else if (id in dataJson.notes && 'content' in req.body) {
+    dataJson.notes[id] = updateEntry;
+    const data = JSON.stringify(dataJson, null, 2);
+    fs.writeFile('data.json', data, err => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: 'An unexpected error occurred.' });
+        process.exit(1);
+      }
+      res.status(200).json(updateEntry);
+    });
   }
 });
