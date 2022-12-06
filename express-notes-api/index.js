@@ -22,7 +22,7 @@ app.get('/api/notes', (req, res) => {
 // Client can GET notes by specific id
 app.get('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
-  if (!Number.isInteger(id)) {
+  if (!Number.isInteger(id) || id < 0) {
     res.status(400).json({ error: 'id must be a positive integer' });
   } else if (dataJson.notes[id]) {
     res.status(200).json(dataJson.notes[id]);
@@ -55,7 +55,7 @@ app.post('/api/notes', (req, res) => {
 // Client can DELETE note by id
 app.delete('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
-  if (!Number.isInteger(id)) {
+  if (!Number.isInteger(id) || id < 0) {
     res.status(400).json({ error: 'id must be a positive integer' });
   } else if (!(id in dataJson.notes)) {
     res.status(404).json({ error: `cannot find note with id ${id}` });
@@ -78,7 +78,7 @@ app.put('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
   const updateEntry = req.body;
   updateEntry.id = id;
-  if (!Number.isInteger(id)) {
+  if (!Number.isInteger(id) || id < 0) {
     res.status(400).json({ error: 'id must be a positive integer' });
   } else if (!('content' in updateEntry)) {
     res.status(400).json({ error: 'content is a required field' });
