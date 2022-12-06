@@ -37,10 +37,14 @@ app.post('/api/notes', (req, res) => {
     newEntry.id = dataJson.nextId;
     dataJson.notes[dataJson.nextId] = newEntry;
     dataJson.nextId++;
-    res.status(201).json(newEntry);
     const data = JSON.stringify(dataJson, null, 2);
     fs.writeFile('data.json', data, err => {
-      if (err) throw err;
+      if (err) {
+        console.error(err);
+        res.status(500).send({ error: 'An unexpected error occurred.' });
+        process.exit(1);
+      }
+      res.status(201).json(newEntry);
     });
   }
 });
