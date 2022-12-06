@@ -74,7 +74,6 @@ app.delete('/api/notes/:id', (req, res) => {
 });
 
 // Client can PUT (update) by specific id
-
 app.put('/api/notes/:id', (req, res) => {
   const id = Number(req.params.id);
   const updateEntry = req.body;
