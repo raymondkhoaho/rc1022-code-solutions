@@ -72,3 +72,15 @@ app.delete('/api/notes/:id', (req, res) => {
     });
   }
 });
+
+// Client can PUT (update) by specific id
+
+app.put('/api/notes/:id', (req, res) => {
+  const id = Number(req.params.id);
+  const updateEntry = req.body;
+  if (!Number.isInteger(id)) {
+    res.status(400).json({ error: 'id must be a positive integer' });
+  } else if (!('content' in updateEntry)) {
+    res.status(400).json({ error: 'content is a required field' });
+  }
+});
