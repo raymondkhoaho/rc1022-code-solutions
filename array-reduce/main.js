@@ -23,14 +23,13 @@ console.log('sum:', sum);
 const product = numbers.reduce((accumulator, currentValue) => accumulator * currentValue);
 console.log('product:', product);
 
-const initialValue = 0;
 const balance = account.reduce((accumulator, currentValue) => {
   if (currentValue.type === 'deposit') {
     return accumulator + currentValue.amount;
   } else {
     return accumulator - currentValue.amount;
   }
-}, initialValue);
+}, 0);
 console.log('balance:', balance);
 
 const composite = traits.reduce((accumulator, currentValue) => {
