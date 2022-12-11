@@ -25,14 +25,15 @@ console.log('product:', product);
 
 const balance = account.reduce((accumulator, currentValue) => {
   if (currentValue.type === 'deposit') {
-    return accumulator + currentValue.amount;
-  } else {
-    return accumulator - currentValue.amount;
+    accumulator += currentValue.amount;
+  } else if (currentValue.type === 'withdrawal') {
+    accumulator -= currentValue.amount;
   }
+  return accumulator;
 }, 0);
 console.log('balance:', balance);
 
 const composite = traits.reduce((accumulator, currentValue) => {
   return Object.assign(accumulator, currentValue);
-});
+}, {});
 console.log('composite:', composite);
