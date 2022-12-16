@@ -6,7 +6,8 @@ export default class Stopwatch extends React.Component {
     super(props);
     this.state = {
       count: currentCount,
-      isStarted: false
+      isStarted: false,
+      intervalID: null
     };
     this.handleClick = this.handleClick.bind(this);
     this.resetClick = this.resetClick.bind(this);
@@ -21,11 +22,13 @@ export default class Stopwatch extends React.Component {
 
   handleClick() {
     if (this.state.isStarted === false) {
-      this.setState({ isStarted: true });
-      this.intervalID = setInterval(() => this.setState({ count: currentCount++ }), 1000);
+      this.setState({
+        isStarted: true,
+        intervalID: setInterval(() => this.setState({ count: currentCount++ }), 1000)
+      });
     } else if (this.state.isStarted === true) {
       this.setState({ isStarted: false });
-      clearInterval(this.intervalID);
+      clearInterval(this.state.intervalID);
     }
   }
 
