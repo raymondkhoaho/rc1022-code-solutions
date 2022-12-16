@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 25px;
+  font-family: sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+div.timer {
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+p {
+  font-size: 3rem;
+}
+
+i {
+  font-size: 2.5rem;
+  margin: 25px;
+  cursor: pointer;
+}
