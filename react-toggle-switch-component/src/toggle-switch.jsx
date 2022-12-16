@@ -16,22 +16,24 @@ export default class ToggleSwitch extends React.Component {
   }
 
   render() {
+    let status;
+    let circle;
+    let text;
     if (this.state.isClicked === true) {
-      return (
-        <div onClick={this.handleClick}>
-          <button className="on"></button>
-          <div className="circle on"></div>
-          <span>ON</span>
-        </div>
-      );
+      status = 'on';
+      circle = 'circle on';
+      text = 'ON';
     } else if (this.state.isClicked === false) {
-      return (
-        <div onClick={this.handleClick}>
-          <button className="off"></button>
-          <div className="circle off"></div>
-          <span>OFF</span>
-        </div>
-      );
+      status = 'off';
+      circle = 'circle off';
+      text = 'OFF';
     }
+    return (
+      <div onClick={this.handleClick}>
+        <button className={status}></button>
+        <div className={circle}></div>
+        <span>{text}</span>
+      </div>
+    );
   }
 }
