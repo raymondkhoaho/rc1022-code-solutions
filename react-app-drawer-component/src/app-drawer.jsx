@@ -20,8 +20,8 @@ export default class AppDrawer extends React.Component {
     let overlay;
     let modal;
     if (this.state.modalOn === false) {
-      overlay = 'overlay hidden';
-      modal = 'menu hidden';
+      overlay = 'overlay overlay-hidden';
+      modal = 'menu menu-hidden';
     } else if (this.state.modalOn === true) {
       overlay = 'overlay';
       modal = 'menu';

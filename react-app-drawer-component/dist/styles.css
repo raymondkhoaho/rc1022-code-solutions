@@ -16,6 +16,8 @@ i {
   padding: 10px;
   font-size: 2rem;
   cursor: pointer;
+  position: fixed;
+  z-index: 1;
 }
 
 .overlay {
@@ -25,17 +27,19 @@ i {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 0;
   transition: 0.3s;
 }
 
 .menu {
-  width: 300px;
+  width: 250px;
   height: 100%;
   position: fixed;
   top: 0;
   background-color: white;
+  border-right: 1px solid black;
   z-index: 2;
+  transform: translateX(0);
   transition: 0.3s;
 }
 
@@ -56,6 +60,10 @@ li:hover {
   transition: 0.3s;
 }
 
-.hidden {
-  display: none;
+.menu-hidden {
+  transform: translateX(-50rem);
+}
+
+.overlay-hidden {
+  opacity: 0;
 }
