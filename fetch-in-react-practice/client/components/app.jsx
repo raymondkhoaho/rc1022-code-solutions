@@ -26,6 +26,17 @@ export default class App extends React.Component {
   }
 
   addTodo(newTodo) {
+    fetch('/api/todos', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newTodo)
+    })
+      .then(res => res.json())
+      .then(data => {
+        const copy = this.state.todos.concat(data);
+        this.setState({ todos: copy });
+      })
+      .catch(err => console.error(err));
     /**
     * Use fetch to send a POST request to `/api/todos`.
     * Then 😉, once the response JSON is received and parsed,
@@ -45,6 +56,20 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
+    const index = this.state.todos.findIndex(element => element.todoId === todoId);
+    const toggleIsCompleted = { isCompleted: !this.state.todos[index].isCompleted };
+    fetch(`/api/todos/${todoId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(toggleIsCompleted)
+    })
+      .then(res => res.json())
+      .then(data => {
+        const copy = this.state.todos.concat();
+        copy[index] = data;
+        this.setState({ todos: copy });
+      })
+      .catch(err => console.error(err));
     /**
      * Find the index of the todo with the matching todoId in the state array.
      * Get its "isCompleted" status.
