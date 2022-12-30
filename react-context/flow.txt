@@ -1,7 +1,56 @@
-User can sign up.
+User can sign up
+  - User is currently on sign-in page
+  - User clicks on the sign up button (given they do not have an account and wish to create one)
+  - window.location.hash will take user to the sign-up window/page from the sign-in window/page
+    - href is the url changes from #sign-in to #sign-up
+  - User will be redirected to the sign-up page from the sign-in page
+  - User will see a form in which they can fill out with minimal to no instructions with requested information
+    to make an account
+  - User will input information requested and submit the form
+    - Valid and invalid changes/notifications may be seen while trying to choose user's username and password
+  - A POST request is sent to the server with user's username and password hashed
+  - Server will post user's hashed username and password into the database
+  - User will receive a response back after submitting their information (successful sign-up OR unsuccessful
+    sign-up notifications)
 
-User can sign in.
 
-User can stay signed in (even if they refresh the page).
+User can sign in
+  - User is currently on sign-in page
+    - User inputs their username and password
+    - User submits their inputs
+    - A POST request is submitted to the server from the client
+    - User's input username and password are checked for matches in the database.
+    - If the User's input matches within the database, the user is issued a token, which is then saved into
+      local storage.
+      - User is sent to another page (homepage, profile, etc.). Sign-in nav-button is changed to Sign-out.
+    - If the User's input does not match within the database, user will receive a notification that there
+        was an invalid login attempt
+      - User is prompted to provide a valid username and password. This process is continued until a lockout
+        for too many attempts is issued or until user successfully inputs valid information
 
-User can sign out.
+  - If user is not on sign-in page but is trying to access a page that requires user to be signed in {
+    - window.location.hash is updated to send user to #sign-in
+    - User is sent to the sign-in page
+    - Start (*) step
+
+
+
+User can stay signed in (even if they refresh the page)
+  - User is already signed in (User is on landing page or any other page accessible upon signining-in || User
+    refreshes the page they are currently on and is signed in)
+  - If there is a token in local storage, the decodeToken method is used to decode the token and then assigned
+    to the user property
+  - If there is no token in local storage, user property is set to null
+  - The payload object is extracted and parsed
+  - The user property is set to the user extracted from payload
+  - isAuthorizing is set to false
+  - The user is redirected to the proper page that mirrors the payload. (Refreshing will send user to the same page)
+
+
+User can sign out
+  - User is currently signed in
+  - User clicks on the sign-out button in the nav-bar
+  - The token in local storage is removed
+  - State of user property is set to null
+  - Nav bar changes sign-out to sign-in
+  - User is sent to the page where users must sign-in if they wish to access website/account information/functions
