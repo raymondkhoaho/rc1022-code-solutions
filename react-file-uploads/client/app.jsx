@@ -16,7 +16,25 @@ export default class App extends React.Component {
   }
 
   handleSubmit(event) {
-    /**
+    event.preventDefault();
+
+    const formData = new FormData();
+    formData.append('caption', this.state.caption);
+    formData.append('image', this.fileInputRef.current.files[0]);
+
+    fetch('/api/uploads', {
+      method: 'POST',
+      body: formData
+    })
+      .then(response => response.json())
+      .then(parsedResponse => {
+        console.log(parsedResponse);
+        this.setState({ caption: '' });
+        this.fileInputRef.current.value = null;
+      })
+      .catch(err => console.error(err));
+  }
+  /**
      * Prevent the browser's default behavior for form submissions.
      *
      * Create a `new` FormData object.
@@ -45,7 +63,6 @@ export default class App extends React.Component {
      * https://reactjs.org/docs/uncontrolled-components.html#the-file-input-tag
      * https://reactjs.org/docs/refs-and-the-dom.html
      */
-  }
 
   render() {
     return (
