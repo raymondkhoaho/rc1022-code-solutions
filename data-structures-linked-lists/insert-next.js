@@ -2,9 +2,9 @@
 /* exported insertNext */
 
 function insertNext(list, value) {
-  const secondData = list.next;
-  const insertList = new LinkedList(value);
-  list.next = insertList;
-  list.next.next = secondData;
-  return list;
+  const next = list.next;
+  list.next = new LinkedList(value);
+  if (next !== null) {
+    list.next.next = next;
+  }
 }
