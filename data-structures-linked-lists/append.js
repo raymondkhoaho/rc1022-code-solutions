@@ -2,5 +2,4 @@
 /* exported append */
 
 function append(list, value) {
-
 }
