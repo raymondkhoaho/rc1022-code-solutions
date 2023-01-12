@@ -1,0 +1,38 @@
+#root {
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 100%;
+}
+
+.column-half {
+  flex-basis: 50%;
+}
+
+.column-quarter {
+  flex-basis: 25%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.left-arrow,
+.right-arrow {
+  margin-top: 290px;
+}
+
+i {
+  margin: 1rem 0.4rem;
+  cursor: pointer;
+}
+
+.right {
+  text-align: right;
+}
